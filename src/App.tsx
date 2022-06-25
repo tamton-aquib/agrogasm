@@ -3,6 +3,7 @@ import './App.css'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
 import BottomNav from './components/BottomNav'
+
 import Community from './components/Community'
 import Weather from './components/Weather'
 import Profile from './components/Profile'

@@ -2,6 +2,7 @@
 .App {
     text-align: center;
     display: none;
+    font-family: "Poppins", sans-serif;
 }
 * {
     padding: 0%;
