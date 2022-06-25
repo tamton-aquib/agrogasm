@@ -1,18 +1,16 @@
 import './BottomNav.css';
+import {Link} from 'react-router-dom'
 
 const BottomNav = () => {
   return (
     <div className="bottomNav">
       <ul>
-        <a target="_blank" href="https://github.com/tamton-aquib">
-          <li className="fa fa-github li_item"></li>
-        </a>
-        <a target="_blank" href="https://discord.com/users/845674119391477820">
-          <li className="fab fa-discord li_item"></li>
-        </a>
-        <a target="_blank" href="https://twitter.com/tamton_aquib">
-          <li className="fas fa-cloud-sun li_item"></li>
-        </a>
+          <li className="fa fa-github li_item"><Link to="/Weather" className='link'>Weather</Link></li>
+          
+          <li className="fab fa-discord li_item"><Link to="/Community" className='link'>Community</Link></li>
+          
+          <li className="fas fa-cloud-sun li_item"><Link to="/Profile" className='link'>Profile</Link></li>
+          
       </ul>
     </div>
   )
