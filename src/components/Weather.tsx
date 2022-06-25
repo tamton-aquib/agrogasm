@@ -5,11 +5,13 @@ const API_KEY = "0cb7faf5612cfcefe21a8ef6857b7391"
 
 const Weather = () => {
     const [query, setQuery] = useState("");
-    const [weather, setWeather] = useState("");
-    const [condition, setCondition] = useState("");
-    const [temp, setTemp] = useState("");
+    const [stuff, setStuff] = useState({
+        "condition": "",
+        "weather": "",
+        "temp": ""
+    });
 
-    const cityRef = useRef()
+    const cityRef = useRef();
 
     const getTodaysDate = () => {
         let d = new Date();
@@ -23,14 +25,17 @@ const Weather = () => {
         await (await fetch(url)).json()
             .then(data => {
                 setQuery("");
-                let weather_condition = data.weather['0']['description']
-                setWeather(data.name);
-                setCondition(weather_condition)
-                setTemp(`${Math.round(data.main.temp - 273)} ℃ `);
+                let stuff = {
+                    "condition": data.weather['0']['description'],
+                    "weather": data.name,
+                    "temp": `${Math.round(data.main.temp - 273)} ℃ `
+                };
+
+                setStuff(stuff)
             })
     }
 
-    return (<>
+    return (<div className="container">
         <div className="date">{getTodaysDate()}</div>
         <div className="search">
             <input
@@ -43,12 +48,12 @@ const Weather = () => {
             />
             <span onClick={() => { getData() }} className="button"></span>
         </div>
-        <div className="location">{weather}</div>
+        <div className="location">{stuff.weather}</div>
         <div className="weather-box">
-            <div className="temp">{temp}</div>
-            <div className="weather">{condition}</div>
+            <div className="temp">{stuff.temp}</div>
+            <div className="weather">{stuff.condition}</div>
         </div>
-    </>)
+    </div>)
 }
 
 export default Weather
