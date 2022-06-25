@@ -1,0 +1,12 @@
+.bottomNav {
+  position: absolute;
+  display: flex;
+  bottom: 0;
+  padding-bottom: 10px;
+  background-color: black;
+}
+
+.li_item {
+  padding-inline: 50px;
+  font-size: 1.2em;
+}
