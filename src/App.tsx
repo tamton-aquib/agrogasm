@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import './App.css'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
@@ -9,20 +8,18 @@ import Weather from './components/Weather'
 import Profile from './components/Settings'
 
 function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <Router>
-      <div className="App">
-        <Routes>
-          <Route path="/" exact element={<Weather />} />
-          <Route path="/community" element={<Community />} />
-          <Route path="/profile" element={<Profile />} />
-        </Routes>
-        <BottomNav />
-      </div>
-    </Router>
-  )
+    return (
+        <Router>
+            <div className="App">
+                <Routes>
+                    <Route path="/" exact component={Weather} />
+                    <Route path="/community" component={Community} />
+                    <Route path="/profile" component={Profile} />
+                </Routes>
+                <BottomNav />
+            </div>
+        </Router>
+    )
 }
 
 export default App
