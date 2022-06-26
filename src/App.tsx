@@ -5,21 +5,23 @@ import BottomNav from './components/BottomNav'
 
 import Community from './components/Community'
 import Weather from './components/Weather'
-import Profile from './components/Settings'
+import Settings from './components/Settings'
+import NewPost from './components/NewPost'
 
 function App() {
-	return (
-		<Router>
-			<div className="App">
-				<Routes>
-					<Route path="/" exact element={<Weather />} />
-					<Route path="/community" element={<Community />} />
-					<Route path="/profile" element={<Profile />} />
-				</Routes>
-				<BottomNav />
-			</div>
-		</Router>
-	)
+    return (
+        <Router>
+            <div className="App">
+                <Routes>
+                    <Route path="/" exact element={<Weather />} />
+                    <Route path="/community" element={<Community />} />
+                    <Route path="/profile" element={<Settings />} />
+                    <Route path="/community/new" element={<NewPost />} />
+                </Routes>
+                <BottomNav />
+            </div>
+        </Router>
+    )
 }
 
 export default App

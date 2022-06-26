@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import './Community.css';
-import NewPost from './NewPost';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
 const dummy = {
     "posts": [],
@@ -50,7 +49,7 @@ const Community = () => {
             {stuff.posts.map((post) =>
                 <div key={post.pid} className="card">
                     <div className="author">
-                        <i class="fa fa-microphone" aria-hidden="true"></i> &nbsp; {post.author}
+                        <i className="fa fa-microphone" aria-hidden="true"></i> &nbsp; {post.author}
                     </div>
                     <span className='reliability'>{post.reliability}</span>
                     <div className="title">
@@ -67,9 +66,11 @@ const Community = () => {
                     </span>
                 </div>
             )}
-            <div className="btn-new">
-                <i class="fa fa-plus" aria-hidden="true"></i>
-            </div>
+            <Link to="/community/new">
+                <div className="btn-new">
+                    <i className="fa fa-plus" aria-hidden="true"></i>
+                </div>
+            </Link>
         </div>
     )
 }
