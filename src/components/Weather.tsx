@@ -17,7 +17,7 @@ const Weather = () => {
         return `${d.getDate()}-${d.getMonth() + 1}-${d.getFullYear()}`
     }
 
-    async function getData() {
+    async function setData() {
         const cityName = "Kottayam";
 
         const url = `https://api.openweathermap.org/data/2.5/weather?units=metrics&appid=${API_KEY}&q=${cityName}`
@@ -33,10 +33,13 @@ const Weather = () => {
                 setStuff(stuff)
             })
     }
+    useEffect(() => {
+        setData()
+    })
 
     return (<div className="container">
         <div className="date">{getTodaysDate()}</div>
-        
+
         <div className="location">{stuff.weather}</div>
         <div className="weather-box">
             <div className="temp">{stuff.temp}</div>
