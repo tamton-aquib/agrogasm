@@ -8,18 +8,18 @@ import Weather from './components/Weather'
 import Profile from './components/Settings'
 
 function App() {
-    return (
-        <Router>
-            <div className="App">
-                <Routes>
-                    <Route path="/" exact component={Weather} />
-                    <Route path="/community" component={Community} />
-                    <Route path="/profile" component={Profile} />
-                </Routes>
-                <BottomNav />
-            </div>
-        </Router>
-    )
+	return (
+		<Router>
+			<div className="App">
+				<Routes>
+					<Route path="/" exact element={<Weather />} />
+					<Route path="/community" element={<Community />} />
+					<Route path="/profile" element={<Profile />} />
+				</Routes>
+				<BottomNav />
+			</div>
+		</Router>
+	)
 }
 
 export default App
