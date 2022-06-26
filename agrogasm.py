@@ -13,17 +13,32 @@ app = Flask(__name__)
 # sys.exit()
 
 data = {
-    "post": {
-        "author": "taj",
-        "title": "A Title",
-        "description": "A nice description.",
-        "upvote": 14, "downvote": 3,
-        "comments": {
+    "posts": [
+        {
+            "pid": 0,
+            "author": "taj",
+            "title": "A Title",
+            "description": "A nice description.",
+            "upvote": 420, "downvote": 0,
+            "comments": {
+                "author": "nishoy",
+                "description": "This is an informative post and it'll surely help in my cultivation.",
+                "upvote": 1, "downvote": 3
+            }
+        },
+        {
+            "pid": 1,
             "author": "nishoy",
-            "description": "This is an informative post and it'll surely help in my cultivation.",
-            "upvote": 1, "downvote": 3
-        }
-    },
+            "title": "A second Title",
+            "description": "Another nice description.",
+            "upvote": 69, "downvote": 17,
+            "comments": {
+                "author": "rashid",
+                "description": "Dude this is boring af.",
+                "upvote": 4, "downvote": 0
+            }
+        },
+    ],
     "global": {
         "threshold": 10
     }
