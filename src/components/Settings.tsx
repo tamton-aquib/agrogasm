@@ -1,7 +1,7 @@
 import './Settings.css'
 
-const Profile = () => {
+const Settings = () => {
     return (<div className="container">Settings page!</div>)
 }
 
-export default Profile
+export default Settings

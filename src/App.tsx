@@ -16,7 +16,7 @@ function App() {
                     <Route path="/" exact element={<Weather />} />
                     <Route path="/community" element={<Community />} />
                     <Route path="/community/new" element={<Community />} />
-                    <Route path="/profile" element={<Settings />} />
+                    <Route path="/settings" element={<Settings />} />
                     <Route path="/community/new" element={<NewPost />} />
                 </Routes>
                 <BottomNav />
