@@ -1,9 +1,98 @@
 @media (max-width: 390px) {
-  .container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin-top: 30%;
-  }
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        /* margin-top: 30%; */
+        position: relative;
+        min-height: 100vh;
+        width: 100%;
+    }
+    .alert-container {
+        width: 100vw;
+        height: 60vh;
+        margin-top: 50%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        overflow-y: scroll;
+    }
+    .alert {
+        width: 90%;
+        height: 100px;
+
+        box-shadow: 13px 10px 15px -3px rgba(0, 0, 0, 0.1);
+        display: flex;
+        /* border: solid black; */
+        border-radius: 0.8rem;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        font-size: 1.2rem;
+        padding: 1rem;
+        color: black;
+    }
+    .red-alert {
+        background: rgb(2, 0, 36);
+        background: rgb(2, 0, 36);
+        background: rgb(255, 68, 68);
+        background: linear-gradient(
+            90deg,
+            rgba(255, 68, 68, 1) 0%,
+            rgba(255, 0, 0, 1) 42%,
+            rgba(0, 0, 0, 1) 100%
+        );
+		color: whitesmoke;
+    }
+    .orange-alert {
+        background: rgb(255, 178, 68);
+        background: linear-gradient(
+            90deg,
+            rgba(255, 178, 68, 1) 0%,
+            rgba(255, 192, 0, 1) 42%,
+            rgba(0, 0, 0, 1) 100%
+        );
+		color: whitesmoke;
+    }
+    .weather-status-img {
+        height: 130px;
+        position: absolute;
+        right: 5%;
+        top: 9%;
+    }
+    .title-wrapper {
+        position: absolute;
+        top: 5%;
+        left: 10%;
+        font-size: 1.5rem;
+    }
+    .title-wrapper h2,
+    .title-wrapper h3 {
+        text-align: left;
+    }
+    .title-wrapper h3 {
+        font-weight: 300;
+    }
+    .date {
+        position: absolute;
+        left: 10%;
+        top: 20%;
+    }
+    .location {
+        position: absolute;
+        left: 10%;
+        top: 27%;
+        font-weight: 600;
+    }
+    .temp {
+        position: absolute;
+        right: 15%;
+        top: 7%;
+    }
+    .weather {
+        position: absolute;
+        right: 8%;
+        top: 25%;
+    }
 }

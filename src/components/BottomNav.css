@@ -1,7 +1,7 @@
 @media (max-width: 390px) {
     .bottomNav {
         width: 100vw;
-        position: absolute;
+        position: sticky;
         margin: auto;
         bottom: 0;
         text-align: center;
