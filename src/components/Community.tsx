@@ -30,6 +30,7 @@ const Community = () => {
                     <div className="author">
                         {post.author}
                     </div>
+                    <span>{post.reliability}</span>
                     <div className="title">
                         {post.title}
                     </div>
@@ -39,7 +40,7 @@ const Community = () => {
                     <span>
                         <i className="fas fa-arrow-up    ">&nbsp;</i>
                         {post.upvote} &nbsp;
-                        <i className="fas fa-arrow-up    ">&nbsp;</i>
+                        <i className="fas fa-arrow-down    ">&nbsp;</i>
                         {post.downvote}
                     </span>
                 </div>

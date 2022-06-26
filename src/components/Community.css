@@ -1,42 +1,48 @@
-.container{
-    justify-content: flex-start;
-}
-.card {
-    background-color: #11121d;
-    box-shadow: 13px 10px 15px -3px rgba(0, 0, 0, 0.1);
-    color: white;
-    margin: 5px;
-    padding: 10%;
-    min-height: 30vw;
-    width: 95%;
-    border-radius: 0.8rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    position: relative;
-}
-.card .author {
-    font-size: 0.8rem;
-    position: absolute;
-    top: 10%;
-    left: 5%;
-}
-.card .title {
-    font-size: 1.4rem;
-    position: absolute;
-    left: 5%;
-}
-.card .description {
-    font-size: 0.8rem;
-    position: absolute;
-    margin-top: 20%;
-    left: 5%;
-}
+@media (max-width: 390px) {
+    .container {
+        justify-content: end;
+        padding-top: 10%;
+    }
+    .container h1 {
+        text-align: center;
+    }
+    .card {
+        background-color: #11121d;
+        box-shadow: 13px 10px 15px -3px rgba(0, 0, 0, 0.1);
+        color: white;
+        margin: 5px;
+        padding: 10%;
+        min-height: 30vw;
+        width: 95%;
+        border-radius: 0.8rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+    }
+    .card .author {
+        font-size: 0.8rem;
+        position: absolute;
+        top: 10%;
+        left: 5%;
+    }
+    .card .title {
+        font-size: 1.4rem;
+        position: absolute;
+        left: 5%;
+    }
+    .card .description {
+        font-size: 0.8rem;
+        position: absolute;
+        margin-top: 20%;
+        left: 5%;
+    }
 
-.card span {
-    font-size: 0.8rem;
-    position: absolute;
-    margin-top: 20%;
-    right: 5%;
+    .card span {
+        font-size: 0.8rem;
+        position: absolute;
+        margin-top: 20%;
+        right: 5%;
+    }
 }
