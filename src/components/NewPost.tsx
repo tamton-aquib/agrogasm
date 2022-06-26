@@ -1,7 +1,14 @@
-
 const NewPost = () => {
+
     return (
-        <div className="container">Add new post!</div>
+        <div className="container">
+            <form>
+                <input name="title" />
+                <input name="description" />
+
+                <button>Submit</button>
+            </form>
+        </div>
     )
 }
 
