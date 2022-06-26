@@ -15,7 +15,7 @@ function App() {
                 <Routes>
                     <Route path="/" exact element={<Weather />} />
                     <Route path="/community" element={<Community />} />
-                    <Route path="/community/new" element={<Community />} />
+                    <Route path="/community/new" element={<NewPost />} />
                     <Route path="/settings" element={<Settings />} />
                     <Route path="/community/new" element={<NewPost />} />
                 </Routes>
