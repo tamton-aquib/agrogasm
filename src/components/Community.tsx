@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react';
 import './Community.css';
+import NewPost from './NewPost';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
 const dummy = {
     "posts": [],
