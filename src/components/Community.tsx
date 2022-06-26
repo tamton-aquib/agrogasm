@@ -23,7 +23,7 @@ const Community = () => {
     }, []);
 
     return (
-        <>
+        <div className='container'>
             <h1>Posts</h1>
             {stuff.posts.map((post) =>
                 <div key={post.pid} className="card">
@@ -37,12 +37,14 @@ const Community = () => {
                         {post.description}
                     </div>
                     <span>
+                        <i className="fas fa-arrow-up    ">&nbsp;</i>
                         {post.upvote} &nbsp;
+                        <i className="fas fa-arrow-up    ">&nbsp;</i>
                         {post.downvote}
                     </span>
                 </div>
             )}
-        </>
+        </div>
     )
 }
 
