@@ -5,6 +5,7 @@
         position: relative;
     }
     .container h1 {
+        font-size: 2.7rem;
         text-align: center;
         margin-bottom: 10%;
         align-self: flex-start;
@@ -32,7 +33,7 @@
         left: 5%;
     }
     .card .title {
-        font-size: 1.4rem;
+        font-size: 1rem;
         position: absolute;
         left: 5%;
     }
@@ -58,6 +59,8 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        left: 50%;
+        transform: translate(-50%,30%);
         bottom: 15%;
         height: 69px;
         width: 69px;
@@ -65,5 +68,21 @@
         color: whitesmoke;
         box-shadow: 13px 10px 15px -3px rgba(0, 0, 0, 0.4);
         background: rgb(54, 54, 54);
+    }
+    .main-grp-bg {
+        padding: 0.5rem 1rem;
+        border-radius: 10px;
+        background: rgb(82, 82, 82);
+        position: relative;
+        transform: translateX(-60%);
+    }
+    .main-grp {
+        color: whitesmoke;
+        font-weight: 400;
+    }
+    .add-grp {
+        transform: translate(60%, -130%) scale(1.5);
+
+        color: grey;
     }
 }

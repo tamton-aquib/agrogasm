@@ -46,6 +46,7 @@ const Community = () => {
     return (
         <div className='container'>
             <h1>Posts</h1>
+            <div className='main-grp-bg'><h3 className="main-grp"><i className="fa fa-location-arrow" aria-hidden="true"></i> Kottayam </h3></div><span className='add-grp'><i className="fa fa-plus-circle" aria-hidden="true"></i></span>
             {stuff.posts.map((post) =>
                 <div key={post.pid} className="card">
                     <div className="author">

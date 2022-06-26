@@ -12,7 +12,7 @@
     .alert-container {
         width: 100vw;
         height: 60vh;
-        margin-top: 50%;
+        margin-top: 69%;
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -21,7 +21,6 @@
     .alert {
         width: 90%;
         height: 100px;
-
         box-shadow: 13px 10px 15px -3px rgba(0, 0, 0, 0.1);
         display: flex;
         /* border: solid black; */
@@ -34,32 +33,30 @@
         color: black;
     }
     .red-alert {
-        background: rgb(2, 0, 36);
-        background: rgb(2, 0, 36);
-        background: rgb(255, 68, 68);
+        background: rgb(255, 42, 42);
         background: linear-gradient(
             90deg,
-            rgba(255, 68, 68, 1) 0%,
-            rgba(255, 0, 0, 1) 42%,
-            rgba(0, 0, 0, 1) 100%
+            rgba(255, 42, 42, 1) 0%,
+            rgba(212, 58, 58, 1) 44%,
+            rgba(255, 125, 125, 1) 100%
         );
-		color: whitesmoke;
+        color: whitesmoke;
     }
     .orange-alert {
-        background: rgb(255, 178, 68);
+        background: rgb(255, 167, 42);
         background: linear-gradient(
             90deg,
-            rgba(255, 178, 68, 1) 0%,
-            rgba(255, 192, 0, 1) 42%,
-            rgba(0, 0, 0, 1) 100%
+            rgba(255, 167, 42, 1) 0%,
+            rgba(255, 197, 35, 1) 44%,
+            rgba(255, 201, 125, 1) 100%
         );
-		color: whitesmoke;
+        color: whitesmoke;
     }
     .weather-status-img {
         height: 130px;
         position: absolute;
         right: 5%;
-        top: 9%;
+        top: 13%;
     }
     .title-wrapper {
         position: absolute;
@@ -82,7 +79,7 @@
     .location {
         position: absolute;
         left: 10%;
-        top: 27%;
+        top: 30%;
         font-weight: 600;
     }
     .temp {
@@ -93,6 +90,6 @@
     .weather {
         position: absolute;
         right: 8%;
-        top: 27%;
+        top: 30%;
     }
 }

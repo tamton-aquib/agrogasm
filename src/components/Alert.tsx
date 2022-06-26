@@ -1,7 +1,7 @@
 const Alert = (props) => {
 	return (
 		<div className={`${props.myclassName} alert`}>
-			<h4>Red Alert !!!!</h4>
+			<h4>{props.content} !!!!</h4>
 		</div>
 	)
 };

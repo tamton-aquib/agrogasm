@@ -58,10 +58,10 @@ const Weather = () => {
             <div className="weather">{stuff.condition}</div>
         </div>
         <div className="alert-container">
-            <Alert myclassName="orange-alert" />
-            <Alert myclassName="red-alert" />
-            <Alert myclassName="orange-alert" />
-            <Alert myclassName="orange-alert" />
+            <Alert myclassName="orange-alert" content="Orange Alert" />
+            <Alert myclassName="red-alert" content="Red Alert" />
+            <Alert myclassName="orange-alert" content="Orange Alert" />
+            <Alert myclassName="orange-alert" content="Orange Alert" />
         </div>
     </div>
     )
