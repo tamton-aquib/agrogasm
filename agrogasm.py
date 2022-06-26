@@ -3,11 +3,14 @@ from flask import Flask, jsonify
 from flask_cors import cross_origin
 
 # import pymongo
+# from flask_pymongo import PyMongo
 
 app = Flask(__name__)
 
+# mongodb_client = PyMongo(app, uri="mongodb://localhost:27017/todo_db")
+# db = mongodb_client.db
+
 # db_client = pymongo.MongoClient("mongodb://localhost:27017/")
-# 
 # if not "agrogasm" in db_client.list_database_names():
 # print("db does not exist")
 # sys.exit()
@@ -59,8 +62,14 @@ data = {
     }
 }
 
+# db.insert_one(data)
+
 @app.route("/", methods=["GET"])
 @cross_origin()
-def get_example():
+def get_init_data():
     return jsonify(data=data)
 
+@app.route("/community/new", methods=["GET"])
+@cross_origin()
+def add():
+    return jsonify(message="Done")
