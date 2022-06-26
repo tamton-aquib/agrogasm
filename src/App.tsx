@@ -15,9 +15,9 @@ function App() {
     <Router>
       <div className="App">
         <Routes>
-          <Route path="/" exact component={Weather} />
-          <Route path="/community" component={Community} />
-          <Route path="/profile" component={Profile} />
+          <Route path="/" exact element={<Weather/>} />
+          <Route path="/community" element={<Community/>} />
+          <Route path="/profile" element={<Profile/>} />
         </Routes>
         <BottomNav />
       </div>

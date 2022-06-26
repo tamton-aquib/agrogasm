@@ -16,7 +16,7 @@
         list-style: none;
     }
     .li_item {
-        font-size: 0.8rem;
+        font-size: 1rem;
         display: flex;
         flex-direction: column;
         height: 100%;
@@ -26,8 +26,10 @@
     }
     .link {
         color: whitesmoke;
+        font-size: 0.8rem;
         text-decoration: none;
         font-family: 'Poppins', sans-serif;
-        font-weight: 500;
+        font-weight: 400;
+        padding-top: 10px;
     }
 }
