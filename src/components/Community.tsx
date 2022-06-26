@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import './Community.css';
 
 const dummy = {
@@ -65,9 +66,11 @@ const Community = () => {
                     </span>
                 </div>
             )}
-            <div className="btn-new">
-                <i className="fa fa-plus" aria-hidden="true"></i>
-            </div>
+            <Link to="/community/new">
+                <div className="btn-new">
+                    <i className="fa fa-plus" aria-hidden="true"></i>
+                </div>
+            </Link>
         </div>
     )
 }
