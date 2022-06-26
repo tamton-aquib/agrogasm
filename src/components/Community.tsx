@@ -22,6 +22,26 @@ const Community = () => {
         setData();
     }, []);
 
+    // const reliability = (post: { upvote: number, downvote: number }) => {
+    // let rel: string;
+    // let total = post.upvote + post.downvote;
+    // let avg = post.upvote / post.downvote;
+    // console.log(avg);
+
+    // if (total >= stuff.global.threshold) {
+    // if (avg >= 70) {
+    // rel = "reliable";
+    // } else if (avg >= 50) {
+    // rel = "unsure"
+    // } else {
+    // rel = "unreliable"
+    // }
+    // } else {
+    // rel = "new!"
+    // }
+    // return rel
+    // }
+
     return (
         <div className='container'>
             <h1>Posts</h1>
