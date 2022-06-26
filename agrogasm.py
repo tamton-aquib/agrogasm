@@ -20,6 +20,7 @@ data = {
             "title": "A Title",
             "description": "A nice description.",
             "upvote": 420, "downvote": 0,
+            "reliability": "reliable",
             "comments": {
                 "author": "nishoy",
                 "description": "This is an informative post and it'll surely help in my cultivation.",
@@ -32,9 +33,23 @@ data = {
             "title": "A second Title",
             "description": "Another nice description.",
             "upvote": 69, "downvote": 17,
+            "reliability": "unreliable",
             "comments": {
                 "author": "rashid",
                 "description": "Dude this is boring af.",
+                "upvote": 4, "downvote": 0
+            }
+        },
+        {
+            "pid": 2,
+            "author": "aflah",
+            "title": "A third Title",
+            "description": "Probably a nice description.",
+            "upvote": 8, "downvote": 23,
+            "reliability": "unreliable",
+            "comments": {
+                "author": "taj",
+                "description": "Fake news",
                 "upvote": 4, "downvote": 0
             }
         },
