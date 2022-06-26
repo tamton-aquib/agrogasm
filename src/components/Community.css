@@ -1,10 +1,14 @@
 @media (max-width: 390px) {
     .container {
-        justify-content: end;
+        justify-content: start !important;
         padding-top: 10%;
     }
     .container h1 {
         text-align: center;
+        margin-bottom: 10%;
+        position: relative;
+        align-self: flex-start;
+        margin-left: 10%;
     }
     .card {
         background-color: #11121d;
@@ -13,7 +17,7 @@
         margin: 5px;
         padding: 10%;
         min-height: 30vw;
-        width: 95%;
+        width: 90%;
         border-radius: 0.8rem;
         display: flex;
         align-items: center;
@@ -44,5 +48,13 @@
         position: absolute;
         margin-top: 20%;
         right: 5%;
+    }
+    .card .reliability{
+        top: 10%;
+        margin-top: 0;
+    }
+    .card .btn-new{
+        position: sticky;
+        margin-bottom: 0%;
     }
 }
