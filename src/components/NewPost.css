@@ -1,0 +1,37 @@
+@media (max-width: 390px) {
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 2rem;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    form input {
+        margin: 1rem;
+        padding: 1rem;
+        height: 60px;
+        width: 300px;
+        border-radius: 10px;
+        border: none;
+        background-color: rgb(212, 212, 212);
+    }
+    button{
+      border: none;
+      padding: 1rem;
+      border-radius: 10px;
+      margin-top: 2rem;
+      background-color: rgb(59, 59, 59);
+      color: whitesmoke;
+    }
+}
