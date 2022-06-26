@@ -2,17 +2,17 @@
     .container {
         justify-content: start !important;
         padding-top: 10%;
+        position: relative;
     }
     .container h1 {
         text-align: center;
         margin-bottom: 10%;
-        position: relative;
         align-self: flex-start;
         margin-left: 10%;
     }
     .card {
         background-color: #11121d;
-        box-shadow: 13px 10px 15px -3px rgba(0, 0, 0, 0.1);
+        box-shadow: 13px 10px 15px -3px rgba(0, 0, 0, 0.2);
         color: white;
         margin: 5px;
         padding: 10%;
@@ -49,12 +49,21 @@
         margin-top: 20%;
         right: 5%;
     }
-    .card .reliability{
+    .card .reliability {
         top: 10%;
         margin-top: 0;
     }
-    .card .btn-new{
-        position: sticky;
-        margin-bottom: 0%;
+    .btn-new {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        bottom: 15%;
+        height: 69px;
+        width: 69px;
+        border-radius: 20%;
+        color: whitesmoke;
+        box-shadow: 13px 10px 15px -3px rgba(0, 0, 0, 0.4);
+        background: rgb(54, 54, 54);
     }
 }

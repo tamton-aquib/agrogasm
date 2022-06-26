@@ -48,7 +48,7 @@ const Community = () => {
             {stuff.posts.map((post) =>
                 <div key={post.pid} className="card">
                     <div className="author">
-                        <i class="fa fa-microphone" aria-hidden="true"></i> &nbsp; {post.author}
+                        <i className="fa fa-microphone" aria-hidden="true"></i> &nbsp; {post.author}
                     </div>
                     <span className='reliability'>{post.reliability}</span>
                     <div className="title">
@@ -66,7 +66,7 @@ const Community = () => {
                 </div>
             )}
             <div className="btn-new">
-                <i class="fa fa-plus" aria-hidden="true"></i>
+                <i className="fa fa-plus" aria-hidden="true"></i>
             </div>
         </div>
     )
