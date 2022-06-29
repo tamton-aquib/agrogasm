@@ -20,8 +20,8 @@ data = {
         {
             "pid": 0,
             "author": "taj",
-            "title": "A Title",
-            "description": "A nice description.",
+            "title": "November: Time for spinach.",
+            "description": "Time for spinach is november",
             "upvote": 420, "downvote": 0,
             "reliability": "reliable",
             "comments": {
@@ -33,8 +33,8 @@ data = {
         {
             "pid": 1,
             "author": "nishoy",
-            "title": "A second Title",
-            "description": "Another nice description.",
+            "title": "Free tomato seeds distribution",
+            "description": "Tomato seeds distribution at KB",
             "upvote": 69, "downvote": 17,
             "reliability": "unsure",
             "comments": {
@@ -61,8 +61,6 @@ data = {
         "threshold": 10
     }
 }
-
-# db.insert_one(data)
 
 @app.route("/", methods=["GET"])
 @cross_origin()
