@@ -1,0 +1,16 @@
+{
+  "name": "Agrogasm",
+  "short_name": "Agrogasm",
+  "description": "Farmer-first community and weather app",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#11121d",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "48x48",
+      "type": "image/png"
+    }
+  ]
+}

@@ -1,16 +1,18 @@
 import './BottomNav.css';
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
+
+const linkClass = ({ isActive }: { isActive: boolean }) =>
+  isActive ? 'link active' : 'link';
 
 const BottomNav = () => {
-
     return (
-        <div className="bottomNav">
+        <nav className="bottomNav" aria-label="Primary">
             <ul>
-                <li className="fas fa-cloud-sun li_item"><Link to="/" className='link'>Weather</Link></li>
-                <li className="fas fa-users li_item"><Link to="/community" className='link'>Community</Link></li>
-                <li className="fa fa-gear li_item"><Link to="/settings" className='link'>Settings</Link></li>
+                <li><NavLink to="/" className={linkClass}><i className="fas fa-cloud-sun" aria-hidden="true"></i><span>Weather</span></NavLink></li>
+                <li><NavLink to="/community" className={linkClass}><i className="fas fa-users" aria-hidden="true"></i><span>Community</span></NavLink></li>
+                <li><NavLink to="/settings" className={linkClass}><i className="fa fa-gear" aria-hidden="true"></i><span>Settings</span></NavLink></li>
             </ul>
-        </div>
+        </nav>
     )
 }
 

@@ -1,2 +1,21 @@
 node_modules/
 __pycache__/
+dist/
+dist-ssr/
+*.local
+.env
+venv/
+.venv/
+*.pyc
+*.db
+*.sqlite3
+
+# graphify
+graphify-out/
+
+# uploads
+static/uploads/
+
+# OS
+.DS_Store
+Thumbs.db

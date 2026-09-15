@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-/* :root{
-    min-height: 100vh;
-} */
 .App {
     text-align: center;
-    display: none;
     font-family: "Poppins", sans-serif;
     min-height: 100vh;
+    max-width: 480px;
+    margin: 0 auto;
+    position: relative;
+    padding-bottom: 90px;
 }
 * {
     padding: 0%;
@@ -15,7 +15,7 @@
 }
 @media (max-width: 390px) {
     .App {
-        display: block;
+        max-width: 100%;
     }
 }
 
@@ -55,5 +55,11 @@
 }
 
 button {
-    font-size: calc(10px + 2vmin);
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
 }

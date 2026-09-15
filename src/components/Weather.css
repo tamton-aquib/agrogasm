@@ -1,3 +1,56 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    gap: 8px;
+}
+.alert-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 12px;
+    padding-bottom: 24px;
+}
+.alert {
+    width: 90%;
+    min-height: 64px;
+    box-shadow: 13px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    border-radius: 0.8rem;
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    padding: 1rem;
+}
+.red-alert {
+    background: linear-gradient(90deg, rgba(255, 42, 42, 1) 0%, rgba(212, 58, 58, 1) 44%, rgba(255, 125, 125, 1) 100%);
+    color: whitesmoke;
+}
+.orange-alert {
+    background: linear-gradient(90deg, rgba(255, 167, 42, 1) 0%, rgba(255, 197, 35, 1) 44%, rgba(255, 201, 125, 1) 100%);
+    color: whitesmoke;
+}
+.weather-status-img {
+    height: 110px;
+}
+.title-wrapper {
+    align-self: flex-start;
+    margin-left: 10%;
+    font-size: 1.4rem;
+    text-align: left;
+}
+.title-wrapper h3 {
+    font-weight: 300;
+}
+.weather-box {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
 @media (max-width: 390px) {
     .container {
         display: flex;

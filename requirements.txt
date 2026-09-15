@@ -1,3 +1,7 @@
-pymongo
-flask
-flask-cors
+flask>=3.0,<4
+flask-cors>=5.0,<6
+flask-limiter>=3.0,<5
+python-dotenv>=1.0,<2
+gunicorn>=22.0,<24
+pytest>=8.0,<9
+werkzeug>=3.0

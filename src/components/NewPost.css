@@ -1,3 +1,52 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding-top: 24px;
+}
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem;
+    width: 100%;
+    gap: 4px;
+}
+form input, form textarea, form select {
+    margin: 0.5rem;
+    padding: 1rem;
+    min-height: 52px;
+    width: min(320px, 90%);
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(212, 212, 212);
+    font-family: inherit;
+}
+form textarea {
+    resize: vertical;
+}
+form label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.85rem;
+    width: 100%;
+}
+form .actions {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+form button{
+  border: none;
+  padding: 0.9rem 1.4rem;
+  border-radius: 10px;
+  margin-top: 1rem;
+  background-color: rgb(59, 59, 59);
+  color: whitesmoke;
+}
 @media (max-width: 390px) {
     .container {
         display: flex;

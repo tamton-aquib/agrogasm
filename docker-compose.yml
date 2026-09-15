@@ -1,0 +1,25 @@
+services:
+  backend:
+    build: .
+    ports:
+      - "5000:5000"
+    env_file:
+      - .env
+    environment:
+      AGROGASM_DB: /data/agrogasm.db
+      FRONTEND_ORIGIN: http://127.0.0.1:5173
+    volumes:
+      - agrogasm-data:/data
+  frontend:
+    image: node:20-slim
+    working_dir: /app
+    volumes:
+      - ./:/app
+    ports:
+      - "5173:5173"
+    command: sh -c "npm install && npm run dev -- --host 0.0.0.0"
+    depends_on:
+      - backend
+
+volumes:
+  agrogasm-data:

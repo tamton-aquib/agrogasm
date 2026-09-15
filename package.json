@@ -5,12 +5,13 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
+    "typecheck": "tsc --noEmit",
+    "format:check": "npx prettier --check src index.html",
     "preview": "vite preview"
   },
   "dependencies": {
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-    "react-router": "^6.3.0",
     "react-router-dom": "^6.3.0"
   },
   "devDependencies": {

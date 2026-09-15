@@ -1,3 +1,136 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding-top: 24px;
+    gap: 12px;
+    min-height: 100vh;
+}
+.container h1 {
+    font-size: 2rem;
+    align-self: flex-start;
+    margin-left: 5%;
+}
+.card {
+    background-color: #11121d;
+    box-shadow: 13px 10px 15px -3px rgba(0, 0, 0, 0.2);
+    color: white;
+    margin: 5px;
+    padding: 56px 20px 20px 20px;
+    width: 90%;
+    border-radius: 0.8rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    gap: 8px;
+    text-align: left;
+}
+.card .author {
+    font-size: 0.8rem;
+    position: absolute;
+    top: 12px;
+    left: 5%;
+}
+.card .title {
+    font-size: 1rem;
+    font-weight: 600;
+}
+.card .description {
+    font-size: 0.85rem;
+    opacity: 0.9;
+}
+.card .reliability {
+    position: absolute;
+    top: 12px;
+    right: 5%;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+}
+.card button {
+    background: transparent;
+    border: 1px solid #444;
+    border-radius: 6px;
+    color: white;
+    padding: 2px 8px;
+    font-size: 0.85rem;
+}
+.comments {
+    border-top: 1px solid #333;
+    padding-top: 8px;
+    width: 100%;
+    font-size: 0.8rem;
+}
+.btn-new {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 50%;
+    transform: translate(-50%, 0);
+    bottom: 100px;
+    height: 56px;
+    width: 56px;
+    border-radius: 20%;
+    color: whitesmoke;
+    box-shadow: 13px 10px 15px -3px rgba(0, 0, 0, 0.4);
+    background: rgb(54, 54, 54);
+}
+.main-grp-bg {
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    background: rgb(82, 82, 82);
+    align-self: flex-start;
+    margin-left: 5%;
+}
+.main-grp {
+    color: whitesmoke;
+    font-weight: 400;
+}
+.add-grp {
+    display: none;
+}
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    width: 90%;
+    align-items: center;
+}
+.filters input, .filters select {
+    padding: 8px 10px;
+    border-radius: 8px;
+    border: 1px solid #555;
+    background: #fff;
+    color: #111;
+    font-size: 0.9rem;
+}
+.filters button, .pagination button, .comment-form button, .card button {
+    cursor: pointer;
+}
+.time {
+    opacity: 0.7;
+    font-weight: 400;
+}
+.comment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 100%;
+}
+.comment-form input {
+    padding: 8px 10px;
+    border-radius: 8px;
+    border: 1px solid #555;
+}
+.pagination {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 0 24px 0;
+}
 @media (max-width: 390px) {
     .container {
         justify-content: start !important;

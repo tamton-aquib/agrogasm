@@ -1,7 +1,12 @@
-const Alert = (props) => {
+interface AlertProps {
+  myclassName: string;
+  content: string;
+}
+
+const Alert = ({ myclassName, content }: AlertProps) => {
 	return (
-		<div className={`${props.myclassName} alert`}>
-			<h4>{props.content} !!!!</h4>
+		<div className={`${myclassName} alert`}>
+			<h4>{content}</h4>
 		</div>
 	)
 };
